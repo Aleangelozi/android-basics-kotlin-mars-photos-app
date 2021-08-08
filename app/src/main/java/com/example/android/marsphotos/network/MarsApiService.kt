@@ -14,7 +14,7 @@ private const val BASE_URL =
 
     interface MarsApiService {
         @GET("photos")
-        fun getPhotos(): String
+        suspend fun getPhotos(): String
     }
 
     object MarsApi {
